@@ -1,0 +1,23 @@
+extends layouts/application
+include mixins/select.pug
+
+block content
+  div.container
+    - if(error)
+      div(class="alert alert-danger" role="alert")
+        | #{error}
+    br
+    div.row
+      | implementação do desafio ateliware. <br/>
+
+      small
+        | O projeto foi desenvolvido utilizando o framework express.js, com typescript e utilizando como base algumas referencias da implementação do algoritmo de Djkistra <br/>
+
+
+    div.row
+      form(action="/rota" method="post")
+        +select_route('start', {}, 'Inicio')
+        +select_route('collect', {}, 'Coletar')
+        +select_route('end', {}, 'Final')
+
+        button.btn.btn-primary(type="submit") Calcular Rota

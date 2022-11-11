@@ -1,0 +1,70 @@
+mixin row_title()
+  div.row
+    .col-1
+      |
+    .col-1.col-title
+      | A
+    .col-1.col-title
+      | B
+    .col-1.col-title
+      | C
+    .col-1.col-title
+      | D
+    .col-1.col-title
+      | E
+    .col-1.col-title
+      | F
+    .col-1.col-title
+      | G
+    .col-1.col-title
+      | H
+
+mixin row(number, options)
+  div.row
+    .col-1.col-title
+      | #{number}
+
+      .col-1.col-fields
+        |
+    - if (options.includes(letter + '2'))
+      .col-1.col-fields.col-selected
+        |
+    - else
+      .col-1.col-fields
+        |
+    - if (options.includes(letter + '3'))
+      .col-1.col-fields.col-selected
+        |
+    - else
+      .col-1.col-fields
+        |
+    - if (options.includes(letter + '4'))
+      .col-1.col-fields.col-selected
+        |
+    - else
+      .col-1.col-fields
+        |
+    - if (options.includes(letter + '5'))
+      .col-1.col-fields.col-selected
+        |
+    - else
+      .col-1.col-fields
+        |
+    - if (options.includes(letter + '6'))
+      .col-1.col-fields.col-selected
+        |
+    - else
+      .col-1.col-fields
+        |
+    - if (options.includes(letter + '7'))
+      .col-1.col-fields.col-selected
+        |
+    - else
+      .col-1.col-fields
+        |
+    - if (options.includes(letter + '8'))
+      .col-1.col-fields.col-selected
+        |
+    - else
+      .col-1.col-fields
+        |

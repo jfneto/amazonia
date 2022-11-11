@@ -1,0 +1,35 @@
+extends layouts/application
+include mixins/rows.pug
+
+block content
+  div.container
+    br
+    div.row
+      a(href="/" class="btn btn-primary")
+        i(class="bi bi-arrow-left")
+        |
+        | Voltar
+    br
+
+    div.row
+      .col-6
+        h1 Resultado
+    .row
+      .col-2
+        | Coletar:
+      .col-8
+        | #{start}
+    .row
+      .col-2
+        | Entregar:
+      .col-8
+        | #{end}
+    .row
+      .col-2
+        | Rota completa:
+      .col-8
+        | #{full_route}
+    br
+    .row
+      .col-6
+        | Tempo total: #{total}

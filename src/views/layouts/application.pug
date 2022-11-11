@@ -1,0 +1,28 @@
+doctype html
+html
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+
+    title #{title}
+
+    include includes/imports.pug
+
+  body
+    include includes/navbar.pug
+
+    main(role="main" class="container")
+      block content
+      br
+      hr
+
+    footer(class='footer')
+      div.container
+        span.text-muted
+          | Desafio Ateliware 2022
+
+  script.
+    // habilita os popover
+    $(function () {
+      $('[data-toggle="popover"]').popover()
+    })

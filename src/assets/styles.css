@@ -1,0 +1,21 @@
+body {
+  margin-top: 60px;
+}
+
+.col-title {
+  background-color: blue;
+  color: white;
+  border: 1px;
+  border-style: solid;
+  border-color: black;
+}
+
+.col-fields {
+  border: 1px;
+  border-style: solid;
+  border-color: black;
+}
+
+.col-selected {
+  background-color: green;
+}
